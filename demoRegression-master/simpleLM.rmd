@@ -42,10 +42,15 @@ plot(LENGTH~HEADLEN,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Adjusted R-squared:  0.8434
+Adjusted R-squared: 0.8434
 
-
-
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+Adjusted R-Squared: 0.5321
 
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
