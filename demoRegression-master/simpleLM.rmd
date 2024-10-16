@@ -36,6 +36,15 @@ summary.lm(simp)
 ```
 Adjusted R-Squared: 0.5073
 
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+Adjusted R-squared:  0.8434
+
+
 
 
 
