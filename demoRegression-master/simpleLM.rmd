@@ -28,6 +28,7 @@ summary.lm(simp)
 ```
 Adjusted R-Squared: 0.7476
 
+
 ```{r}
 simp <- lm(LENGTH~AGE,data=bears)
 plot(LENGTH~AGE,data=bears)
