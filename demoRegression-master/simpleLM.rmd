@@ -1,6 +1,6 @@
 ---
 title: "simpleRegress"
-author: "Miguel Avila"
+author: "Angelica Romero"
 date: "Fall 2024"
 output: html_document
 ---
@@ -26,7 +26,7 @@ plot(LENGTH~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Adjusted R-Squared: 0.7476
+The adjusted R-Squared for length based on a bear's neck is 0.7476
 
 
 ```{r}
@@ -35,7 +35,8 @@ plot(LENGTH~AGE,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Adjusted R-Squared: 0.5073
+The adjusted R-Squared for length of a bear based off of age is 0.5073
+
 
 ```{r}
 simp <- lm(LENGTH~HEADLEN,data=bears)
@@ -43,7 +44,8 @@ plot(LENGTH~HEADLEN,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Adjusted R-squared: 0.8434
+The adjusted R-squared for the length of bears based off their head length is 0.8434.
+
 
 ```{r}
 simp <- lm(LENGTH~HEADWTH,data=bears)
@@ -51,7 +53,8 @@ plot(LENGTH~HEADWTH,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Adjusted R-Squared: 0.5321
+The adjusted R-Squared for a bear's length based on their head width is 0.5321
+
 
 ```{r}
 simp <- lm(LENGTH~CHEST,data=bears)
@@ -59,18 +62,23 @@ plot(LENGTH~CHEST,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Adjusted R-Squared: 0.7869
+The adjusted R-Squared for a bear's length based on the size of their chest is 0.7869.
+
+
 ```{r}
 simp <- lm(LENGTH~WEIGHT,data=bears)
 plot(LENGTH~WEIGHT,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Adjusted R-Squared: 0.7423
+The adjusted R-Squared for the length of a bear based on their weight is 0.7423.
+
+
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
-Order from worst to best:   
+
+Order from worst to best based on Adjusted R-Squared.     
 5)Age   
 4)Head-With   
 3)Weight   
